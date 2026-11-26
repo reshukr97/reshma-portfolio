@@ -14,7 +14,6 @@
     --muted-color: #94a3b8;
     --border-color: #263451;
     --footer-color: #0d1222;
-
     --primary-color: #8b5cf6;
     --secondary-color: #60a5fa;
     --gradient: linear-gradient(135deg, #7c3aed, #2563eb);
@@ -120,17 +119,16 @@ header {
 ================================= */
 
 .hero {
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     max-width: 1200px;
     margin: auto;
-    padding: 130px 30px 60px;
+    padding: 60px 30px 40px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
 }
-
 .hero-content {
     max-width: 650px;
 }
@@ -207,10 +205,10 @@ header {
     justify-content: center;
     align-items: center;
 }
-/*
+
 .glow-circle {
-    width: 300px;
-    height: 300px;
+    width: 295px;
+    height: 295px;
     border-radius: 50%;
 
     background: radial-gradient(circle, #312e81, #080b16 70%);
@@ -223,17 +221,18 @@ header {
     align-items: center;
 
     animation: float 4s ease-in-out infinite;
-}*/
+}
+/*
 .glow-circle {
     display: none !important;
-}
+}*/
 .glow-circle span {
     font-size: 110px;
 }
 
 .profile-image {
-   width: 200px;
-    height: 200px;
+   width: 280px;
+    height: 280px;
     border-radius: 50%;
 
     background: radial-gradient(circle, #312e81, #080b16 70%);
@@ -245,7 +244,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    animation: float 4s ease-in-out infinite;
+   /* animation: float 4s ease-in-out infinite;*/
 }
 
 .profile-image img {
@@ -305,7 +304,7 @@ body.light-theme .glow-circle {
 .section {
     max-width: 1100px;
     margin: auto;
-    padding: 60px 30px;
+    padding: 40px 30px;
     text-align: center;
     scroll-margin-top: 80px;
 }
@@ -492,7 +491,7 @@ footer {
     }
 
     .section {
-        padding: 70px 20px;
+        padding: 50px 20px;
     }
 }
 
